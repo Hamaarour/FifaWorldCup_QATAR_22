@@ -1,0 +1,129 @@
+/* :root{
+    --main-color:;
+} */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Almarai', sans-serif;
+
+
+}
+
+ul {
+    list-style: none;
+}
+
+#header {
+    height: 20rem;
+}
+
+.bg-primary {
+    background: #811538 !important;
+    color: white;
+    text-transform: uppercase;
+}
+
+.bg-secondary {
+    background: #5b0d25 !important;
+    color: white;
+}
+
+#header {
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 65%);
+    /* border-bottom: 25px solid #5b0d25; */
+
+}
+
+#bg-image {
+    width: 100%;
+    height: 100%;
+    background-image: url(/images/pattern.png);
+}
+
+.image {
+    position: absolute;
+    z-index: 999;
+    left: 100px;
+    top: 100px;
+}
+
+.image img {
+    height: 250px;
+    filter: drop-shadow(5px 5px 30px #222);
+    -webkit-filter: drop-shadow(5px 5px 30px #222);
+}
+
+#header #bg-image .text {
+    color: white;
+    direction: rtl;
+    margin-right: 100px;
+}
+
+#header #bg-image .text h1 {
+    font-size: 60px;
+    font-weight: 800;
+}
+
+#header #bg-image .text h1:nth-child(2) {
+    font-size: 80px;
+    font-weight: 800;
+}
+
+.qatar-image {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.qatar-image img {
+    width: 400px;
+}
+
+/* start groups */
+
+.container .title h2 {
+    direction: rtl;
+    font-weight: 700;
+    position: relative;
+}
+
+.row .col-sm-6 .bg-primary {
+    text-align: center;
+
+}
+
+.row .col-sm-6 .box .team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 6px;
+    margin-bottom: 6px;
+
+}
+
+/** Flag */
+
+.row .col-sm-6 .box .team .flag {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border: 1px solid #eee;
+}
+
+.row .col-sm-6 .box .team h5 {
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+
+/* end groups */
