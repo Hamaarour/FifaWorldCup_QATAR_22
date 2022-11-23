@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container .row .flag {
+    width: 40px;
+    height: 40px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
