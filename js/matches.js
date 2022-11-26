@@ -18,14 +18,15 @@ function getMatches() {
         const awayteam = match.awayTeam;
         const utc = match.utcDate;
         const matchDate = new Date(utc);
-        const dateString =
-          matchDate.getUTCFullYear() +
-          "/" +
-          (matchDate.getUTCMonth() + 1) +
-          "/" +
-          matchDate.getUTCDate();
-        const utcH = matchDate.getUTCHours() + ":" + matchDate.getUTCMinutes();
-        if (hometeam.name == null) break;
+        const dateString = `
+        ${matchDate.getUTCFullYear()} \\ ${
+          matchDate.getUTCMonth() + 1
+        } \\ ${matchDate.getUTCDate()}
+        `;
+        utcH = ` ${matchDate.getUTCHours()} : ${matchDate.getUTCMinutes()}`;
+        if (hometeam.name == null) {
+          break;
+        }
         const content = `
           <div class="col-sm-12 mt-5">
                 <div class="card shadow rounded-pill overflow-hidden ml">
